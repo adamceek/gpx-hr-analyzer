@@ -1,38 +1,53 @@
-# Heart Rate Comparison: Garmin vs Huawei
+# 📊 Heart Rate Accuracy Comparison Script
 
-📊 Skript pre porovnanie presnosti merania srdcového tepu medzi dvoma zariadeniami (napr. Garmin HRM a Huawei Watch Fit 2) pomocou `.gpx` súborov.
+A Python tool to **compare the heart rate measurement accuracy** between two devices  
+(e.g., Garmin HRM and Huawei Watch Fit 2) using `.gpx` files.
 
-## 🚀 Funkcie
+---
 
-- Nahranie a porovnanie dvoch `.gpx` súborov obsahujúcich HR dáta
-- Automatická detekcia optimálneho časového posunu
-- Vizualizácia výsledkov
-- Export do `.tsv` a ukladanie grafov
-- Podpora detekcie výpadkov HR záznamov
+## 🚀 Features
 
-## 📂 Štruktúra súborov
+- Upload and compare two `.gpx` files containing HR (heart rate) data  
+- Automatically detect optimal time offset  
+- Visualize the results  
+- Export results to `.tsv` and save graphs  
+- Detect HR recording dropouts
 
-- `porovnanie.ipynb` – Hlavný Colab notebook
-- `porovnanie.py` – Alternatíva pre lokálne spustenie (voliteľné)
+---
 
-## 📦 Závislosti
+## 📂 File Structure
 
-Spúšťané v Google Colab (štandardné knižnice):
-- `matplotlib`
-- `numpy`
-- `xml`
-- `datetime`
+- `porovnanie.ipynb` – Main Colab notebook  
+- `porovnanie.py` – Alternative script for local execution (optional)
 
-## 📁 Použitie
+---
 
-1. Otvor `porovnanie.ipynb` v Google Colab
-2. Nahraj 2 GPX súbory
-3. Skript automaticky:
-    - Deteguje dátum a typ aktivity
-    - Porovná HR záznamy
-    - Uloží graf a výsledky
+## 📦 Dependencies
 
-## 🧠 Poznámka
+Runs in **Google Colab** using standard Python libraries:
 
-Tento projekt vznikol ako osobný nástroj na analýzu tréningových dát. Môžeš si ho upraviť podľa svojich potrieb.
+- `matplotlib`  
+- `numpy`  
+- `xml`  
+- `datetime`  
+
+---
+
+## 📁 Usage
+
+1. Open `porovnanie.ipynb` in [Google Colab](https://colab.research.google.com)
+2. Upload **2 GPX files** (e.g., one from Garmin, one from Huawei)
+3. The script will automatically:
+   - Detect the **activity date** and **type**
+   - Compare HR data using the best time shift
+   - Save the **graph** and export results to `.tsv` in Google Drive
+
+---
+
+## 🧠 Note
+
+This project was created as a personal tool for **training data analysis**.  
+Feel free to **customize it** for your own use.
+
+---
 
